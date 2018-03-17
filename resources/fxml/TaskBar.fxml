@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="taskbar" prefHeight="53.0" prefWidth="542.0" styleClass="taskBar" stylesheets="@../css/taskbar.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enfiniStudios.sigma.ui.TaskBarController">
+            <left>
+               <HBox fx:id="primaryElements" prefHeight="53.0" prefWidth="206.0" BorderPane.alignment="CENTER">
+                  <padding>
+                     <Insets bottom="5.0" left="10.0" top="5.0" />
+                  </padding>
+         <children>
+             <JFXButton fx:id="workspacebtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#switchSpace">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../icons/workspace.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </JFXButton>
+            <JFXButton fx:id="crmbtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#switchCrm">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../icons/crm.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </JFXButton>
+            <JFXButton fx:id="mailbtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" onMouseClicked="#switchMail">
+                 <graphic>
+                     <ImageView>
+                         <image>
+                             <Image url="@../icons/mail.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+             </JFXButton>
+         </children>
+               </HBox>
+            </left>
+            <right>
+                <HBox fx:id="secondaryElements" prefHeight="53.0" prefWidth="245.0" />
+            </right>
+</BorderPane>
