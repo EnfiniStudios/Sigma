@@ -14,7 +14,6 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.scene.input.MouseEvent;
 import static javafx.application.Platform.exit;
-import javafx.scene.layout.GridPane;
 
 public class CRMController implements Initializable {
     @FXML
