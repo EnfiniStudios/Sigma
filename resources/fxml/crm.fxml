@@ -5,19 +5,25 @@
 <?import com.jfoenix.controls.JFXScrollPane?>
 <?import com.jfoenix.controls.JFXTabPane?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXListView?>
 
-<BorderPane fx:id="crmParent" stylesheets="@../css/crm.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="com.enfiniStudios.sigma.ui.CRMController">
+
+<BorderPane fx:id="crmParent" stylesheets="@../css/crm.css"  xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enfiniStudios.sigma.ui.CRMController">
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
@@ -27,7 +33,44 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <JFXProgressBar fx:id="loadBar" layoutX="1.0" layoutY="-1.0" prefHeight="5.0" prefWidth="945.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                                <JFXProgressBar fx:id="loadBar" layoutX="1.0" layoutY="-1.0" prefHeight="5.0" prefWidth="945.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+<!--                                <JFXScrollPane fx:id="scroll" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" >
+                                    <topBar>
+                                        <children>
+                                            <JFXButton fx:id="backButton">
+                                                <StackPane.alignment>CENTER_LEFT</StackPane.alignment>
+                                                <StackPane.margin>
+                                                    <Insets>
+                                                        <left>
+                                                            20
+                                                        </left>
+                                                    </Insets>
+                                                </StackPane.margin>
+                                            </JFXButton>
+                                        </children>
+                                    </topBar>
+                                    <bottomBar>
+                                        <children>
+                                            <Label style="-fx-text-fill:WHITE; -fx-font-size: 40;">
+                                                Store
+                                                <StackPane.alignment>CENTER_LEFT</StackPane.alignment>
+                                                <StackPane.margin>
+                                                    <Insets>
+                                                        <left>
+                                                            80
+                                                        </left>
+                                                    </Insets>
+                                                </StackPane.margin>
+                                            </Label>
+                                        </children>
+                                    </bottomBar>
+                                    <content>
+                                        <StackPane style="-fx-padding:24;">
+                                            <JFXListView fx:id="contentList" prefHeight="Infinity">
+                                            </JFXListView>
+                                        </StackPane>
+                                    </content>
+                                </JFXScrollPane>-->
                            </children>
                       </AnchorPane>
                     </content>
