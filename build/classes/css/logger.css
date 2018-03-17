@@ -1,0 +1,22 @@
+.tab {
+    -fx-background-color:"#3D4956" ;
+    -fx-pref-height: 70;
+
+}
+
+.tab-header-background{
+    -fx-background-color: "#3D4956";
+}
+
+.text-field {
+    -fx-prompt-text-fill: white;
+}
+
+.password-field{
+    -fx-prompt-text-fill: white;
+}
+
+.button {
+    -fx-border-color: "#eda678";
+    -fx-border-radius: 0.2em;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="spaceParent" prefHeight="516.0" prefWidth="945.0" stylesheets="@../css/workspace.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enfiniStudios.sigma.ui.WorkspaceController">
+   <top>
+      <BorderPane id="topBar" prefHeight="22.0" prefWidth="945.0" BorderPane.alignment="CENTER">
+         <left>
+            <Label fx:id="interactionpops" prefHeight="49.0" prefWidth="290.0" text="Welcome User!!" textFill="#fcf9f9">
+               <font>
+                  <Font name="Segoe UI Light" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </left>
+          <right>
+            <HBox alignment="TOP_RIGHT" layoutX="729.0" layoutY="2.0" prefHeight="45.0" prefWidth="235.0" spacing="15.0">
+               <children>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/panel_music.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/signalfull.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/panelsettings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView onMouseClicked="#exitbtn" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/panel_exit.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="10.0" right="10.0" top="5.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets top="5.0" />
+               </BorderPane.margin>
+            </HBox>
+      </right>
+    </BorderPane>
+   </top>
+   <center>
+      <Pane id="paneStyle" prefHeight="200.0" prefWidth="884.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane id="overlayStyle" fx:id="overlayPane" prefHeight="72.0" stylesheets="@../css/workspace.css" />
+            <AnchorPane layoutX="72.0" layoutY="36.0" prefHeight="183.0" prefWidth="405.0">
+               <children>
+                  <Label fx:id="hrlabel" layoutX="113.0" layoutY="20.0" text="00" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="74.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="202.0" layoutY="43.0" orientation="VERTICAL" prefHeight="58.0" prefWidth="6.0" />
+                  <Label fx:id="minlabel" layoutX="225.0" layoutY="20.0" text="00" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="74.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="setNotation" layoutX="317.0" layoutY="74.0" text="AM" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="datelabel" alignment="CENTER" layoutX="22.0" layoutY="128.0" prefHeight="36.0" prefWidth="361.0" text="DAY" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutY="229.0" prefHeight="91.0" prefWidth="486.0">
+               <children>
+                  <JFXProgressBar fx:id="loader" layoutY="44.0" prefHeight="1.0" prefWidth="374.0" />
+                  <Circle fill="#ffffff00" layoutX="407.0" layoutY="45.0" radius="32.0" stroke="#fffefe" strokeType="INSIDE" strokeWidth="2.0" />
+                  <JFXButton id="notifications" fx:id="notificationPops" layoutX="397.0" layoutY="35.0" prefHeight="15.0" prefWidth="15.0" ripplerFill="#eda678" style="-fx-background-color: #FFFFFF; -fx-background-radius: 10px;" text="0" textFill="#dd8f70" />
+                  
+                           </children>
+            </AnchorPane>
+
+                     </children>
+      </Pane>
+   </center>
+</BorderPane>

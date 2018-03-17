@@ -1,0 +1,35 @@
+.jfx-progress-bar > .bar {
+    -fx-background-color: #eda678;
+    
+}
+
+#paneStyle {
+     -fx-background-image: url("../wallpapers/11.jpg");
+     -fx-background-repeat: stretch;
+     -fx-background-size: 100% 100%;
+     -fx-background-position: center center;
+
+ }
+
+#topBar {
+    -fx-background-color: linear-gradient(to bottom,#2B2B2B,#353535);
+
+}
+
+#overlayStyle{
+    -fx-background-color: linear-gradient(to bottom ,#353535,TRANSPARENT);
+    -fx-background-size: 100% 72;
+    -fx-opacity: 1;
+  }
+  
+  #notifications{
+       -fx-background-radius: 5em;
+        -fx-min-width: 20px;
+        -fx-min-height: 20px;
+        -fx-max-width: 20px;
+        -fx-max-height: 20px;
+
+        -fx-background-insets: 0px;
+        -fx-padding: 0px;
+  }
+

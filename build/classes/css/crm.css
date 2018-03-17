@@ -1,0 +1,36 @@
+
+
+.jfx-progress-bar > .bar {
+    -fx-background-color: #eda678;
+    
+}
+
+
+.jfx-tab-pane .tab {
+    -fx-pref-height : 90;
+}
+
+.jfx-tab-pane .tab .tab-label{
+    -fx-text-fill : #c9c9c9;
+    -fx-font-weight: normal;
+    -fx-font-size: 16
+}
+
+.jfx-tab-pane .tab-header-area .jfx-rippler{
+    -jfx-rippler-fill: #eda678;
+}
+.jfx-tab-pane .tab-selected-line{
+    -fx-background-color : #eda678;
+}
+
+.jfx-tab-pane .tab-header-background{
+-fx-background-color:  #3D4956;
+}
+
+.jfx-tab-pane .tab:selected .tab-label {
+    -fx-text-fill :white;
+}
+
+.tab-exit {
+    -jfx-rippler-fill : #eda678;
+}

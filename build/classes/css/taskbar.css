@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11 Mar, 2018, 2:30:12 PM
+    Author     : "Enfini Studios"
+*/
+
+.taskBar: inWorkSpace{
+    -fx-effect: innershadow(three-pass-box, black, 20, 0.2, 0, 0);
+    -fx-background-color: #353535;
+    
+    
+}
+
+.taskBar: inMail{
+    -fx-background-color: #dad7d7;
+    -fx-effect:innershadow(one-pass-box, #dad7d7,20,0.2,0,0);
+    
+    
+}
+
+.taskBar: inCrm{
+    -fx-background-color: #dad7d7;
+    -fx-effect:innershadow(one-pass-box, #dad7d7,20,0.2,0,0);
+    
+    
+}
+
+
+

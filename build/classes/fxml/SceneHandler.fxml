@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<StackPane fx:id="parent" prefHeight="516" prefWidth="945" xmlns:fx="http://javafx.com/fxml/1"  fx:controller="com.enfiniStudios.sigma.ui.SceneController">
+   <children>
+      <BorderPane fx:id="space" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</StackPane>
