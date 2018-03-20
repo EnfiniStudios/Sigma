@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="crmParent" stylesheets="@../css/crm.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="com.enfiniStudios.sigma.ui.CRMController">
+<BorderPane fx:id="crmParent" stylesheets="@../css/crm.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.enfiniStudios.sigma.ui.CRMController">
    <center>
       <AnchorPane BorderPane.alignment="CENTER">
          <children>
