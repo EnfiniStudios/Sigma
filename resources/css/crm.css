@@ -8,6 +8,7 @@
 
 .jfx-tab-pane .tab {
     -fx-pref-height : 90;
+    -fx-pref-width: 90;
 }
 
 .jfx-tab-pane .tab .tab-label{
